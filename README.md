@@ -68,6 +68,13 @@ Enter the path of the folder you want to organize.
 - shutil
 - os
 
+## 💻 Command Line Usage
+
+You can provide the folder path directly:
+
+```bash
+python organizer.py "C:\Users\Saurabh\Downloads"
+
 ## 📌 Future Improvements
 
 - Add a dry-run mode
