@@ -1,6 +1,7 @@
 import os
 import shutil
 from pathlib import Path
+import sys
 
 
 FILE_CATEGORIES = {
@@ -65,10 +66,15 @@ def organize_folder(folder_path):
     print(f"\nDone! Organized {moved_files} file(s).")
 
 
+
+
 if __name__ == "__main__":
     print("📂 Smart File Organizer")
     print("-" * 30)
 
-    folder = input("Enter folder path: ").strip()
+    if len(sys.argv) > 1:
+        folder = sys.argv[1]
+    else:
+        folder = input("Enter folder path: ").strip()
 
     organize_folder(folder)
