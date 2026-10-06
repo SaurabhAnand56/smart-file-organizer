@@ -2,8 +2,11 @@ import os
 import shutil
 from pathlib import Path
 import sys
+<<<<<<< HEAD
 
 from gradio_client import file
+=======
+>>>>>>> upstream/main
 
 
 FILE_CATEGORIES = {
@@ -69,6 +72,8 @@ def organize_folder(folder_path, dry_run=False):
         moved_files += 1
 
     print(f"\nDone! Organized {moved_files} file(s).")
+
+
 
 
 if __name__ == "__main__":
